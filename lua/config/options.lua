@@ -11,14 +11,9 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.opt.cmdheight = 0
-vim.opt.laststatus = 2
+vim.opt.laststatus = 0
 
---vim.opt.statusline = "%#StatusLine# %f %m %= %l:%c %{mode()} "
-
---vim.opt.winbar = "%{strftime('%c',getftime(expand('%')))} %= %f "
---vim.opt.winbar = "%{strftime('%c')}"
-vim.opt.statusline = "%f %h%w%m%r %=%(%l,%c%) %{strftime('%H:%M')}"
---vim.opt.statusline = ""
+vim.opt.winbar = "%f %h%w%m%r %=%(%l,%c%) %{strftime('%H:%M')}"
 
 -- Active window winbar color
 vim.api.nvim_set_hl(0, "WinBar", { fg = "#ffffff", bg = "#282c34", bold = true })
